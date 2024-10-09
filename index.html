@@ -11,10 +11,11 @@
         }
 
         #footer {
-            background-image: url(""); /* Adicione a URL da imagem do rodapé, se necessário */
+            background-image: url(""); /* Adicione a URL da imagem do rodapé aqui, se necessário */
         }
 
-        #header .first-button .main-button {
+        #header .first-button .main-button,
+        #header .second-button .main-button {
             border: 2px solid #ffcc00;
         }
 
@@ -26,14 +27,7 @@
         #header .first-button .hvr-bounce-to-top:before,
         #header .first-button .hvr-bounce-to-bottom:before,
         #header .first-button .hvr-bounce-to-left:before,
-        #header .first-button .hvr-bounce-to-right:before {
-            background: #ffcc00;
-        }
-
-        #header .second-button .main-button {
-            border: 2px solid #ffcc00;
-        }
-
+        #header .first-button .hvr-bounce-to-right:before,
         #header .second-button .hvr-sweep-to-top:before,
         #header .second-button .hvr-sweep-to-bottom:before,
         #header .second-button .hvr-sweep-to-left:before,
@@ -126,14 +120,13 @@
             color: #ffcc00;
         }
     </style>
-
     <link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="32x32" />
     <link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png" />
     <meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png" />
 </head>
 
-<body class="page-template page-template-homepage page-template-homepage-php page page-id-15879">
+<body>
     <div class="header" id="dynamic">
         <nav class="row clearfix">
             <div class="logo">
@@ -142,6 +135,7 @@
         </nav>
     </div>
 
+    <!-- Responsive menu toggle -->
     <div class="mobile-menu clearfix" style="display:none">
         <div id="collapse">
             <div class="collapse-darker">
@@ -160,21 +154,20 @@
     </div>
 
     <div id="main-wrap" class="clearfix">
+        <!-- Header showcase area -->
         <section id="header">
             <div class="row row-header clearfix">
+                <!-- Logo -->
                 <div style="display:none" class="logo animated fadeIn">
                     <a href="https://meuapp.mobi/" title="Meu App">Meu App</a>
                 </div>
             </div>
         </section>
 
-        <!-- Adicione mais conteúdo aqui conforme necessário -->
-
+        <!-- Adicione seu conteúdo aqui -->
+        <footer id="footer">
+            <!-- Adicione o conteúdo do rodapé aqui -->
+        </footer>
     </div>
-
-    <footer id="footer">
-        <!-- Conteúdo do rodapé -->
-    </footer>
-
 </body>
 </html>
