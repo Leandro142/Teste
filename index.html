@@ -4,170 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu App</title>
-
     <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         #header {
-            background-image: url("https://meuapp.mobi/wp-content/uploads/2019/09/background.jpg");
+            height: 300px; /* Altura do cabeçalho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #333; /* Cor de fundo temporária */
         }
 
         #footer {
-            background-image: url(""); /* Adicione a URL da imagem do rodapé aqui, se necessário */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
 
-        #header .first-button .main-button,
-        #header .second-button .main-button {
-            border: 2px solid #ffcc00;
+        .button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #000;
+            border-radius: 5px;
+            text-decoration: none;
         }
 
-        #header .first-button .hvr-sweep-to-top:before,
-        #header .first-button .hvr-sweep-to-bottom:before,
-        #header .first-button .hvr-sweep-to-left:before,
-        #header .first-button .hvr-sweep-to-right:before,
-        #header .first-button .hvr-fade:hover,
-        #header .first-button .hvr-bounce-to-top:before,
-        #header .first-button .hvr-bounce-to-bottom:before,
-        #header .first-button .hvr-bounce-to-left:before,
-        #header .first-button .hvr-bounce-to-right:before,
-        #header .second-button .hvr-sweep-to-top:before,
-        #header .second-button .hvr-sweep-to-bottom:before,
-        #header .second-button .hvr-sweep-to-left:before,
-        #header .second-button .hvr-sweep-to-right:before,
-        #header .second-button .hvr-fade:hover,
-        #header .second-button .hvr-bounce-to-top:before,
-        #header .second-button .hvr-bounce-to-bottom:before,
-        #header .second-button .hvr-bounce-to-left:before,
-        #header .second-button .hvr-bounce-to-right:before {
-            background: #ffcc00;
+        .button:hover {
+            background-color: #e0b800;
         }
 
-        .owl-theme .owl-controls .owl-page.active span,
-        .owl-theme .owl-controls.clickable .owl-page:hover span,
-        .flex-control-paging li a.flex-active,
-        .flex-control-paging li a:hover,
-        .pricing-table .featured .pricing-header,
-        #footer input[type="button"]:hover,
-        .footer-widget input[type="button"]:hover,
-        #footer input[type="submit"]:hover,
-        .footer-widget input[type="submit"]:hover,
-        #footer input[type="reset"]:hover,
-        .footer-widget input[type="reset"]:hover {
-            background: #ffcc00;
-        }
-
-        #sidebar .widget input.search-form-input,
-        #sidebar .widget_archive select,
-        #sidebar .widget_categories select#cat,
-        #sidebar select,
-        #wp-calendar tbody td#today,
-        .slick-dots li:hover,
-        .slick-dots li.slick-active,
-        .button-more,
-        #respond .form-submit,
-        body input.search-form-input,
-        #sidebar .widget_tag_cloud a {
-            border: 2px solid #ffcc00;
-        }
-
-        .flex-control-paging li a.flex-active,
-        .flex-control-paging li a:hover,
-        .owl-theme .owl-controls .owl-page.active span,
-        .owl-theme .owl-controls.clickable .owl-page:hover span,
-        #header input[type="button"],
-        #header input[type="submit"],
-        #header input[type="reset"],
-        #footer input[type="button"],
-        .footer-widget input[type="button"],
-        #footer input[type="submit"],
-        .footer-widget input[type="submit"],
-        #footer input[type="reset"],
-        .footer-widget input[type="reset"] {
-            border: 2px solid #ffcc00;
-        }
-
-        .nav-toggle,
-        #header input[type="button"]:hover,
-        .header-widget input[type="button"]:hover,
-        #header input[type="submit"]:hover,
-        .header-widget input[type="submit"]:hover,
-        #header input[type="reset"]:hover,
-        .header-widget input[type="reset"]:hover,
-        .slick-dots li:hover,
-        .slick-dots li.slick-active,
-        .border-block,
-        .button-more:hover,
-        #respond .form-submit:hover,
-        #wp-calendar tr th,
-        #sidebar .widget_tag_cloud a:hover {
-            background: #ffcc00;
-        }
-
-        #sidebar .widget a:hover,
-        #sidebar .widget ul li a:before,
-        #sidebar .widget_recent_comments ul li:before,
-        .button,
-        .button.normal,
-        body a,
-        .entry-title a:hover,
-        #commentform #submit,
-        #sidebar select,
-        #sidebar .widget input.search-form-input,
-        #sidebar .widget_archive select,
-        #sidebar .widget_categories select#cat,
-        #wp-calendar tbody td#today,
-        .button-more,
-        body input.search-form-input,
-        #sidebar .widget_tag_cloud a {
-            color: #ffcc00;
+        main {
+            padding: 20px;
         }
     </style>
-    <link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="32x32" />
-    <link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png" />
-    <meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png" />
 </head>
 
 <body>
-    <div class="header" id="dynamic">
-        <nav class="row clearfix">
-            <div class="logo">
-                <a href="#" title="Meu App" class="totop logo-text">Meu App</a>
-            </div>
-        </nav>
-    </div>
+    <header id="header">
+        <h1>Bem-vindo ao Meu App</h1>
+    </header>
 
-    <!-- Responsive menu toggle -->
-    <div class="mobile-menu clearfix" style="display:none">
-        <div id="collapse">
-            <div class="collapse-darker">
-                <div class="row clearfix">
-                    <div class="mobile-menu-inner">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main>
+        <h2>Conteúdo Principal</h2>
+        <p>Este é um exemplo simples de como estruturar sua página.</p>
+        <a href="#" class="button">Saiba Mais</a>
+    </main>
 
-        <div class="collapse-menu-bg clearfix">
-            <div class="collapse-menu-inner">
-                <a href="#" id="collapse-menu"><i class="fa fa-bars"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="main-wrap" class="clearfix">
-        <!-- Header showcase area -->
-        <section id="header">
-            <div class="row row-header clearfix">
-                <!-- Logo -->
-                <div style="display:none" class="logo animated fadeIn">
-                    <a href="https://meuapp.mobi/" title="Meu App">Meu App</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Adicione seu conteúdo aqui -->
-        <footer id="footer">
-            <!-- Adicione o conteúdo do rodapé aqui -->
-        </footer>
-    </div>
+    <footer id="footer">
+        <p>&copy; 2024 Meu App. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
